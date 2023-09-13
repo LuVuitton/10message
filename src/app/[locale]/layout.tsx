@@ -1,0 +1,41 @@
+import { NextIntlClientProvider } from "next-intl";
+import "./globals.css";
+import type { Metadata } from "next";
+import { NotFound } from "./NotFound/NotFound";
+import { TheHeader } from "@/components/header/TheHeader";
+
+// export function generateStaticParams() {
+//   return [{ locale: "en" }, { locale: "ua" }];
+// }
+
+export const metadata: Metadata = {
+  title: "10message",
+  description: "do text",
+};
+
+export default async function RootLayout({
+  children,
+  params: { locale },
+}: {
+  children: React.ReactNode;
+  params: { locale: string };
+}) {
+  
+  let messages;
+  try {
+    messages = (await import(`../../../locales/${locale}.json`)).default;
+  } catch (error) {
+    NotFound();
+  }
+
+  return (
+    <html lang={locale}>
+      <body>
+        <NextIntlClientProvider locale={locale} messages={messages}>
+          <TheHeader currentLanguage={locale}/>
+          {children}
+        </NextIntlClientProvider>
+      </body>
+    </html>
+  );
+}

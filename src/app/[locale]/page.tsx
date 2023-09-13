@@ -1,10 +1,18 @@
 import Link from "next/link";
 import s from "./home.module.scss";
 
-export default function Home() {
+
+export default async function Home() {
+
+
+
+  
+
   return (
+     
     <div className={s.mainWrapper}>
       <ul>
+
         <Link href={"chat"}>
           <li>chat</li>
         </Link>
@@ -28,6 +36,11 @@ export default function Home() {
         <Link href={"sign-up"}>
           <li>sign-up</li>
         </Link>
+        <Link href="/profile" locale="es">
+        <li>ES</li>
+        </Link>
+
+
       </ul>
     </div>
   );
