@@ -10,7 +10,7 @@ export default function Profile() {
   return (
     <div>
       <div>
-        <h1>{t("test")}</h1>
+        <h1>{t("hello-world")}</h1>
       </div>
 
       <div>{count}</div>

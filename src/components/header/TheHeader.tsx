@@ -28,7 +28,7 @@ export const TheHeader = ({currentLanguage}:{currentLanguage:string}) => {
     <div>
     <button onClick={toBack}>BACK</button>
     </div>
-    <div><h3>{t("test")}</h3></div>
+    <div><h3>{t("hello-world")}</h3></div>
     <div>
     <select onChange={(e) => switchLang(e.target.value)} value={currentLanguage}>
       <option value="en">English</option>

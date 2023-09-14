@@ -1,3 +1,35 @@
 {
-    "test": "Hello world"
+  "hello-world": "Hello, world",
+  "auth": {
+    "common": {
+      "sign-up-btn": "Sign Up",
+      "sign-in-btn": "Sign In"
+    },
+    "fields-name": {
+      "email": "Email",
+      "password": "Password",
+      "passwordConfirm": "Confirm Password",
+      "agreements": "Agreements"
+    },
+    "auth-errors": {
+      "common": {
+        "required": "This field is required"
+      },
+      "email": {
+        "invalid-characters": "Invalid email format",
+        "spaces": "Email should not contain spaces"
+      },
+      "password": {
+        "min": "Password should be at least 6 characters long",
+        "max": "Password should not exceed 20 characters",
+        "spaces": "Password should not contain spaces",
+        "invalidCharacters": "Password can contain Latin characters ",
+        "complexity": "Password should contain a-z, A-Z, 1-9"
+      },
+      "password-confirm": {
+        "oneOf": "Passwords must match"
+      },
+      "agreements": {}
+    }
+  }
 }

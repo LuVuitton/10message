@@ -1,3 +1,35 @@
- {
-    "test": "Hallo Welt"
+{
+  "hello-world": "Hallo Welt",
+  "auth": {
+    "common": {
+      "sign-up-btn": "Registrieren",
+      "sign-in-btn": "Anmelden"
+    },
+    "fields-name": {
+      "email": "E-Mail",
+      "password": "Passwort",
+      "passwordConfirm": "Passwort bestätigen",
+      "agreements": "Vereinbarungen"
+    },
+    "auth-errors": {
+      "common": {
+        "required": "Dieses Feld ist erforderlich"
+      },
+      "email": {
+        "invalid-characters": "Ungültiges E-Mail-Format",
+        "spaces": "E-Mail darf keine Leerzeichen enthalten"
+      },
+      "password": {
+        "min": "Das Passwort muss mindestens 6 Zeichen lang sein",
+        "max": "Das Passwort darf maximal 20 Zeichen lang sein",
+        "spaces": "Das Passwort darf keine Leerzeichen enthalten",
+        "invalidCharacters": "Das Passwort kann lateinische Zeichen",
+        "complexity": "Das Passwort muss a-z, A-Z, 1-9"
+      },
+      "password-confirm": {
+        "oneOf": "Die Passwörter müssen übereinstimmen"
+      },
+      "agreements": {}
+    }
+  }
 }

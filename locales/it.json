@@ -1,3 +1,35 @@
 {
-    "test": "Ciao mondo"
+  "hello-world": "Ciao mondo",
+  "auth": {
+    "common": {
+      "sign-up-btn": "Registrati",
+      "sign-in-btn": "Accedi"
+    },
+    "fields-name": {
+      "email": "Indirizzo email",
+      "password": "Password",
+      "passwordConfirm": "Conferma password",
+      "agreements": "Accordi"
+    },
+    "auth-errors": {
+      "common": {
+        "required": "Questo campo è obbligatorio"
+      },
+      "email": {
+        "invalid-characters": "Formato email non valido",
+        "spaces": "L'indirizzo email non deve contenere spazi"
+      },
+      "password": {
+        "min": "La password deve contenere almeno 6 caratteri",
+        "max": "La password non deve superare i 20 caratteri",
+        "spaces": "La password non deve contenere spazi",
+        "invalidCharacters": "La password può contenere caratteri latini",
+        "complexity": "La password deve contenere a-z, A-Z, 1-9"
+      },
+      "password-confirm": {
+        "oneOf": "Le password devono coincidere"
+      },
+      "agreements": {}
+    }
+  }
 }
