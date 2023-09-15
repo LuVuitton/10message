@@ -13,14 +13,15 @@ type Inputs = {
   agreements: boolean;
 };
 
-export default function SignIn() {
+export default function SignUp() {
   const {
     register,
     handleSubmit,
     watch,
-    formState: { errors },
+    formState: { errors, isValid },
   } = useForm<Inputs>({
     resolver: yupResolver(SignUpFormSchema()),
+    mode: "onTouched",
   });
 
   const t = useTranslations("auth");
@@ -65,7 +66,9 @@ export default function SignIn() {
           errorMessage={errors?.agreements?.message}
         />
 
-        <button type="submit">{t("common.sign-up-btn")}</button>
+        <button type="submit" >
+          {t("common.sign-up-btn")}
+        </button>
       </div>
     </form>
   );
