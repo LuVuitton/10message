@@ -4,14 +4,13 @@ import s from "./sign-up.module.scss";
 import {
   useForm,
   SubmitHandler,
-  UseFormRegister,
-  FieldError,
 } from "react-hook-form";
 import { SignUpFormSchema } from "../sign-up/SignUpFormSchema";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { InputError } from "@/components/auth/InputError";
 import { useTranslations } from "next-intl";
 import { AuthInput } from "@/components/auth/authInput/AuthInput";
+import { SocialAuthBtn } from "@/components/auth/socialAuthBtn/SocialAuthBtn";
+import { AgreementsCheckbox } from "@/components/auth/agreementsCheckbox/AgreementsCheckbox";
 
 type Inputs = {
   email: string;
@@ -51,7 +50,7 @@ export default function SignUp() {
           />
 
           <AuthInput
-            type={"password"}
+            type={"text"}
             register={register}
             registerName={"password"}
             placeholder={t("fields-name.password")}
@@ -60,7 +59,7 @@ export default function SignUp() {
           />
 
           <AuthInput
-            type={"password"}
+            type={"text"}
             register={register}
             registerName={"passwordConfirm"}
             placeholder={t("fields-name.passwordConfirm")}
@@ -68,41 +67,19 @@ export default function SignUp() {
             errorMessage={errors?.passwordConfirm?.message}
           />
 
-          <div>
-            <input type="checkbox" {...register("agreements")} />
-            {t("fields-name.agreements")}
-          </div>
-          <InputError
+          <AgreementsCheckbox
+            register={register}
+            registerName={"agreements"}
             error={errors.agreements}
             errorMessage={errors?.agreements?.message}
           />
 
-          <button type="submit">{t("common.sign-up-btn")}</button>
+          <button className={s.submitBtn} type="submit">
+            {t("common.sign-up-btn")}
+          </button>
         </div>
       </form>
+      <SocialAuthBtn socailNetworkName="Google" />
     </div>
   );
 }
-
-//        <input {...register("email")} placeholder={t("fields-name.email")} />
-//         <InputError
-//           error={errors.email}
-//           errorMessage={errors?.email?.message}
-//         />
-//        <input
-//           {...register("password")}
-//           placeholder={t("fields-name.password")}
-//         />
-//         <InputError
-//           error={errors.password}
-//           errorMessage={errors?.password?.message}
-//         />
-
-//         <input
-//           {...register("passwordConfirm")}
-//           placeholder={t("fields-name.passwordConfirm")}
-//         />
-//         <InputError
-//           error={errors.passwordConfirm}
-//           errorMessage={errors?.passwordConfirm?.message}
-//         />

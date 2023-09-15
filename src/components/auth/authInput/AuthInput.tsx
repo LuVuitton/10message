@@ -10,6 +10,8 @@ export const AuthInput: React.FC<Props> = ({
   errorMessage,
   type
 }) => {
+
+
   return (
     <div className={s.mainWrapper}>
       <div className={s.mainContainer}>
@@ -17,7 +19,7 @@ export const AuthInput: React.FC<Props> = ({
       type={type}
         {...register(registerName)}
         placeholder={placeholder}
-        className={s.customInput}
+        className={`${s.customInput}  ${error ? s.redBorder : ''}`}
       />
       <InputError
         error={error}

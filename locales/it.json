@@ -9,12 +9,13 @@
       "email": "Indirizzo email",
       "password": "Password",
       "passwordConfirm": "Conferma password",
-      "agreements": "Accordi"
+      "agreements": "Accetto i Termini di Servizio e l'Informativa sulla Privacy" 
+       },
+       "auth-errors": {
+         "common": {
+           "required": "Questo campo è obbligatorio"
+         }
     },
-    "auth-errors": {
-      "common": {
-        "required": "Questo campo è obbligatorio"
-      },
       "email": {
         "invalid-characters": "Formato email non valido",
         "spaces": "L'indirizzo email non deve contenere spazi"
@@ -29,7 +30,9 @@
       "password-confirm": {
         "oneOf": "Le password devono coincidere"
       },
-      "agreements": {}
+    "social-auth": {
+      "btnText": "Registrati con",
+      "or": "o"
     }
   }
 }

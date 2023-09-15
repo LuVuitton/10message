@@ -9,7 +9,7 @@
       "email": "E-Mail",
       "password": "Passwort",
       "passwordConfirm": "Passwort bestätigen",
-      "agreements": "Vereinbarungen"
+      "agreements": "Ich stimme den Nutzungsbedingungen und der Datenschutzrichtlinie zu"
     },
     "auth-errors": {
       "common": {
@@ -30,6 +30,10 @@
         "oneOf": "Die Passwörter müssen übereinstimmen"
       },
       "agreements": {}
+    },
+    "social-auth": {
+      "btnText": "Registrieren mit",
+      "or": "oder"
     }
   }
 }

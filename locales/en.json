@@ -9,7 +9,7 @@
       "email": "Email",
       "password": "Password",
       "passwordConfirm": "Confirm Password",
-      "agreements": "Agreements"
+      "agreements": "I agree to the Terms of Service and Privacy Policy"
     },
     "auth-errors": {
       "common": {
@@ -30,6 +30,10 @@
         "oneOf": "Passwords must match"
       },
       "agreements": {}
+    },
+    "social-auth": {
+      "btnText": "Sign up with",
+      "or": "or"
     }
   }
 }

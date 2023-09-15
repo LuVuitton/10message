@@ -9,7 +9,7 @@
       "email": "Correo electrónico",
       "password": "Contraseña",
       "passwordConfirm": "Confirmar contraseña",
-      "agreements": "Acuerdos"
+      "agreements": "Estoy de acuerdo con los Términos de Servicio y la Política de Privacidad"
     },
     "auth-errors": {
       "common": {
@@ -28,8 +28,10 @@
       },
       "password-confirm": {
         "oneOf": "Las contraseñas deben coincidir"
-      },
-      "agreements": {}
+      }    },
+    "social-auth": {
+      "btnText": "Registrarse con",
+      "or": "o"
     }
   }
 }
