@@ -20,11 +20,11 @@
         "spaces": "L'indirizzo email non deve contenere spazi"
       },
       "password": {
-        "min": "La password deve contenere almeno 6 caratteri",
-        "max": "La password non deve superare i 20 caratteri",
-        "spaces": "La password non deve contenere spazi",
-        "invalidCharacters": "La password può contenere caratteri latini",
-        "complexity": "La password deve contenere a-z, A-Z, 1-9"
+        "min": "La pass deve contenere almeno 6 caratteri",
+        "max": "La pass non deve superare i 20 caratteri",
+        "spaces": "La pass non deve contenere spazi",
+        "invalidCharacters": "La pass può contenere caratteri latini",
+        "complexity": "La pass deve contenere a-z, A-Z, 1-9"
       },
       "password-confirm": {
         "oneOf": "Le password devono coincidere"

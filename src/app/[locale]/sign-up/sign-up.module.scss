@@ -1,9 +1,8 @@
-.inputsWrapper {
-    display: flex;flex-direction: column;
-    justify-content: center;
+.mainWrapper {
+  .inputsWrapper {
+    display: flex;
+
     align-items: center;
-    gap: 5px;
-    input {
-        padding: 16px;
-    }
+    flex-direction: column;
+  }
 }

@@ -3,10 +3,13 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { NotFound } from "./NotFound/NotFound";
 import { TheHeader } from "@/components/header/TheHeader";
+import { Inter } from "next/font/google";
 
 // export function generateStaticParams() {
 //   return [{ locale: "en" }, { locale: "ua" }];
 // }
+
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "10message",
@@ -20,7 +23,6 @@ export default async function RootLayout({
   children: React.ReactNode;
   params: { locale: string };
 }) {
-  
   let messages;
   try {
     messages = (await import(`../../../locales/${locale}.json`)).default;
@@ -30,9 +32,9 @@ export default async function RootLayout({
 
   return (
     <html lang={locale}>
-      <body>
+      <body className={inter.className}>
         <NextIntlClientProvider locale={locale} messages={messages}>
-          <TheHeader currentLanguage={locale}/>
+          <TheHeader currentLanguage={locale} />
           {children}
         </NextIntlClientProvider>
       </body>
