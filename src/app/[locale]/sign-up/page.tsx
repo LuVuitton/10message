@@ -84,7 +84,12 @@ export default function SignUp() {
           </button>
         </div>
       </form>
-      <SocialAuthBtn socailNetworkName="Google" />
+      <p className={s.or}>{t("social-auth.or")}</p>
+
+      <div className={s.socialsBtns}>
+      <SocialAuthBtn socailNetworkName={"Google"} btnPurpose={"sign-up"} />
+      <SocialAuthBtn socailNetworkName={"Facebook"} btnPurpose={"sign-up"}/>
+      </div>
 
 
       <Link href={'/sign-in'} className={s.alreadyHaveAccoutn}>{t("common.already-have-account")}</Link>

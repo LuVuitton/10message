@@ -5,8 +5,13 @@
       "sign-up-btn": "Registrarse",
       "sign-in-btn": "Iniciar sesión",
       "already-have-account": "Ya tengo una cuenta. Iniciar sesión",
+      "dont-have-account": "¿Eres nuevo aquí? Regístrate",
+      "dont-have-account-description": "(Es más rápido de lo que piensas)",
       "regestration-title": "Registro",
-      "registration-description":"Aquí es realmente rápido"
+      "registration-description": "Aquí es realmente rápido",
+      "sign-in-title": "Iniciar sesión",
+      "sign-in-description": "Oh, de todos modos, nadie te reconocerá )",
+      "forgot-pass":"¿Olvidaste tu contraseña?"
     },
     "fields-name": {
       "email": "Correo electrónico",
@@ -31,9 +36,12 @@
       },
       "password-confirm": {
         "oneOf": "Las contraseñas deben coincidir"
-      }    },
+      }
+    },
     "social-auth": {
-      "btnText": "Registrarse con",
+      "sign-up-btn-text": "Registrarse con",
+      "sign-in-btn-text": "Iniciar sesión con",
+
       "or": "o"
     }
   }

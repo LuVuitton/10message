@@ -5,8 +5,13 @@
       "sign-up-btn": "Registrieren",
       "sign-in-btn": "Anmelden",
       "already-have-account": "Ich habe bereits einen Account. Einloggen",
+      "dont-have-account": "Neu hier? Registrieren",
+"dont-have-account-description": "(Es geht schneller, als du denkst)",
       "regestration-title": "Registrierung",
-      "registration-description":"Hier geht es wirklich schnell"
+      "registration-description":"Hier geht es wirklich schnell",
+      "sign-in-title": "Anmelden",
+      "sign-in-description": "Ach, sowieso wird dich keiner erkennen )",
+      "forgot-pass":"Passwort vergessen?"
     },
     "fields-name": {
       "email": "E-Mail",
@@ -35,7 +40,9 @@
       "agreements": {}
     },
     "social-auth": {
-      "btnText": "Registrieren mit",
+      "sign-up-btn-text": "Registrieren mit",
+      "sign-in-btn-text": "Anmelden mit",
+
       "or": "oder"
     }
   }

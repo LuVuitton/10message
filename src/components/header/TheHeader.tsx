@@ -20,10 +20,10 @@ export const TheHeader = ({ currentLanguage }: { currentLanguage: string }) => {
   return (
     <div className={s.mainWrapper}>
       <div>
-        <button onClick={toBack}>BACK</button>
+        <button onClick={toBack}>{"<"}</button>
       </div>
       <div>
-        <h3>{t("hello-world")}</h3>
+        <p>{t("hello-world")}</p>
       </div>
       <div>
         <select
