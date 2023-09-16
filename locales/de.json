@@ -3,7 +3,10 @@
   "auth": {
     "common": {
       "sign-up-btn": "Registrieren",
-      "sign-in-btn": "Anmelden"
+      "sign-in-btn": "Anmelden",
+      "already-have-account": "Ich habe bereits einen Account. Einloggen",
+      "regestration-title": "Registrierung",
+      "registration-description":"Hier geht es wirklich schnell"
     },
     "fields-name": {
       "email": "E-Mail",

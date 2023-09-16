@@ -11,6 +11,7 @@ import { useTranslations } from "next-intl";
 import { AuthInput } from "@/components/auth/authInput/AuthInput";
 import { SocialAuthBtn } from "@/components/auth/socialAuthBtn/SocialAuthBtn";
 import { AgreementsCheckbox } from "@/components/auth/agreementsCheckbox/AgreementsCheckbox";
+import Link from "next/link";
 
 type Inputs = {
   email: string;
@@ -38,6 +39,10 @@ export default function SignUp() {
 
   return (
     <div className={s.mainWrapper}>
+      <div className={s.titleAndDescription}>
+        <h1>{t("common.regestration-title")}</h1>
+        <p>{t("common.registration-description")}</p>
+      </div>
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className={s.inputsWrapper}>
           <AuthInput
@@ -80,6 +85,9 @@ export default function SignUp() {
         </div>
       </form>
       <SocialAuthBtn socailNetworkName="Google" />
+
+
+      <Link href={'/sign-in'} className={s.alreadyHaveAccoutn}>{t("common.already-have-account")}</Link>
     </div>
   );
 }

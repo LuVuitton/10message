@@ -3,7 +3,10 @@
   "auth": {
     "common": {
       "sign-up-btn": "Зарегистрироваться",
-      "sign-in-btn": "Войти"
+      "sign-in-btn": "Войти",
+      "already-have-account": "У меня уже есть аккаунт. Войти",
+      "regestration-title": "Регистрация",
+      "registration-description":"Тут это действительно быстро"
     },
     "fields-name": {
       "email": "Эл. почта (email)",

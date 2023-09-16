@@ -6,7 +6,7 @@
 
     .customInput {
       border: 1px solid #ccc; /* Толщина рамки и цвет */
-      border-radius: 5px; /* Закругление углов */
+      border-radius: 8px; /* Закругление углов */
       padding: 10px; /* Внутренний отступ в инпуте */
       width: 93%; /* Растягиваем инпут на всю ширину контейнера */
       &:focus {

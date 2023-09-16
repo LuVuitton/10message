@@ -3,7 +3,10 @@
   "auth": {
     "common": {
       "sign-up-btn": "Зареєструватися",
-      "sign-in-btn": "Увійти"
+      "sign-in-btn": "Увійти",
+      "already-have-account": "У мене вже є обліковий запис. Увійти",
+      "regestration-title": "Реєстрація",
+      "registration-description":"Тут це дійсно швидко"
     },
     "fields-name": {
       "email": "Ел. пошта (email)",
