@@ -10,7 +10,7 @@
       "regestration-title": "Реєстрація",
       "registration-description": "Тут це дійсно швидко",
       "sign-in-title": "Увійти",
-      "sign-in-description": "Ой, та все одно не впізнають )",
+      "sign-in-description": "Тут дикий слоган",
       "forgot-pass":"Забули пароль?"
     },
     "fields-name": {
@@ -44,5 +44,17 @@
 
       "or": "або"
     }
+  },
+  "header": {
+    "btns": {
+      "settings":"Налаштування",
+      "online-stack":"Зараз поруч",
+      "favorites":"Улюблене",
+      "conversations":"Чат"
+    }
   }
 }
+
+
+
+

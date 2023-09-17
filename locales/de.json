@@ -6,12 +6,12 @@
       "sign-in-btn": "Anmelden",
       "already-have-account": "Ich habe bereits einen Account. Einloggen",
       "dont-have-account": "Neu hier? Registrieren",
-"dont-have-account-description": "(Es geht schneller, als du denkst)",
+      "dont-have-account-description": "(Es geht schneller, als du denkst)",
       "regestration-title": "Registrierung",
-      "registration-description":"Hier geht es wirklich schnell",
+      "registration-description": "Hier geht es wirklich schnell",
       "sign-in-title": "Anmelden",
-      "sign-in-description": "Ach, sowieso wird dich keiner erkennen )",
-      "forgot-pass":"Passwort vergessen?"
+      "sign-in-description": "Тут дикий слоган на немецком",
+      "forgot-pass": "Passwort vergessen?"
     },
     "fields-name": {
       "email": "E-Mail",
@@ -44,6 +44,14 @@
       "sign-in-btn-text": "Anmelden mit",
 
       "or": "oder"
+    }
+  },
+  "header": {
+    "btns": {
+      "settings": "Einstellungen",
+      "online-stack": "Jetzt in der Nähe",
+      "favorites": "Favoriten",
+      "conversations": "Chat"
     }
   }
 }

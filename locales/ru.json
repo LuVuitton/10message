@@ -10,7 +10,7 @@
       "regestration-title": "Регистрация",
       "registration-description":"Тут это действительно быстро",
       "sign-in-title": "Вход",
-      "sign-in-description":"Ой, та все равно никто не узнает )",
+      "sign-in-description":"Тут дикий слоган",
       "forgot-pass":"Забыли пароль?"
     },
     "fields-name": {
@@ -43,6 +43,14 @@
       "sign-up-btn-text": "Зарегистрироваться с помощью",
       "sign-in-btn-text": "Войти с помощью",
       "or": "или"
+    }
+  },
+  "header": {
+    "btns": {
+      "settings":"Настройки",
+      "online-stack":"Сейчас рядом",
+      "favorites":"Избранное",
+      "conversations":"Чат"
     }
   }
 }

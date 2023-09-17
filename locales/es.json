@@ -10,7 +10,7 @@
       "regestration-title": "Registro",
       "registration-description": "Aquí es realmente rápido",
       "sign-in-title": "Iniciar sesión",
-      "sign-in-description": "Oh, de todos modos, nadie te reconocerá )",
+      "sign-in-description": "Тут дикий слоган на испанском",
       "forgot-pass":"¿Olvidaste tu contraseña?"
     },
     "fields-name": {
@@ -44,5 +44,16 @@
 
       "or": "o"
     }
+  },
+  "header": {
+    "btns": {
+      "settings":"Configuración",
+      "online-stack":"Cerca ahora",
+      "favorites":"Favoritos",
+      "conversations":"Chat"
+    }
   }
 }
+
+
+

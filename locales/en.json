@@ -6,12 +6,12 @@
       "sign-in-btn": "Sign In",
       "already-have-account": "I already have an account. Log in",
       "dont-have-account": "New here? Sign up",
-"dont-have-account-description": "(It's faster than you think)",
+      "dont-have-account-description": "(It's faster than you think)",
       "regestration-title": "Registration",
-      "registration-description":"Here it is indeed fast",
+      "registration-description": "Here it is indeed fast",
       "sign-in-title": "Sign In",
-      "sign-in-description": "Oh, nobody will recognize you anyway )",
-      "forgot-pass":"Forgot password?"
+      "sign-in-description": "Тут дикий слоган на английском",
+      "forgot-pass": "Forgot password?"
     },
     "fields-name": {
       "email": "Email",
@@ -44,6 +44,14 @@
       "sign-in-btn-text": "Sign in with",
 
       "or": "or"
+    }
+  },
+  "header": {
+    "btns": {
+      "settings": "Settings",
+      "online-stack": "Nearby now",
+      "favorites": "Favorites",
+      "conversations": "Chat"
     }
   }
 }

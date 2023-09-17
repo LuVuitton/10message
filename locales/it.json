@@ -6,43 +6,51 @@
       "sign-in-btn": "Accedi",
       "already-have-account": "Ho già un account. Accedi",
       "dont-have-account": "Sei nuovo qui? Registrati",
-"dont-have-account-description": "(È più veloce di quanto pensi)",
+      "dont-have-account-description": "(È più veloce di quanto pensi)",
       "regestration-title": "Registrazione",
-      "registration-description":"Qui è davvero veloce", 
+      "registration-description": "Qui è davvero veloce",
       "sign-in-title": "Accedi",
-      "sign-in-description": "Oh, comunque, nessuno ti riconoscerà )",
-      "forgot-pass":"Hai dimenticato la password?"
+      "sign-in-description": "Тут дикий слоган на итальянском",
+      "forgot-pass": "Hai dimenticato la password?"
     },
     "fields-name": {
       "email": "Indirizzo email",
       "password": "Password",
       "passwordConfirm": "Conferma password",
-      "agreements": "Accetto i Termini di Servizio e l'Informativa sulla Privacy" 
-       },
-       "auth-errors": {
-         "common": {
-           "required": "Questo campo è obbligatorio"
-         },
-         "email": {
-           "invalid-characters": "Formato email non valido",
-           "spaces": "L'indirizzo email non deve contenere spazi"
-         },
-         "password": {
-           "min": "La pass deve contenere almeno 6 caratteri",
-           "max": "La pass non deve superare i 20 caratteri",
-           "spaces": "La pass non deve contenere spazi",
-           "invalidCharacters": "La pass può contenere caratteri latini",
-           "complexity": "La pass deve contenere a-z, A-Z, 1-9"
-         },
-         "password-confirm": {
-           "oneOf": "Le password devono coincidere"
-         }
+      "agreements": "Accetto i Termini di Servizio e l'Informativa sulla Privacy"
+    },
+    "auth-errors": {
+      "common": {
+        "required": "Questo campo è obbligatorio"
+      },
+      "email": {
+        "invalid-characters": "Formato email non valido",
+        "spaces": "L'indirizzo email non deve contenere spazi"
+      },
+      "password": {
+        "min": "La pass deve contenere almeno 6 caratteri",
+        "max": "La pass non deve superare i 20 caratteri",
+        "spaces": "La pass non deve contenere spazi",
+        "invalidCharacters": "La pass può contenere caratteri latini",
+        "complexity": "La pass deve contenere a-z, A-Z, 1-9"
+      },
+      "password-confirm": {
+        "oneOf": "Le password devono coincidere"
+      }
     },
     "social-auth": {
       "sign-up-btn-text": "Registrati con",
       "sign-in-btn-text": "Accedi con",
 
       "or": "o"
+    }
+  },
+  "header": {
+    "btns": {
+      "settings": "Impostazioni",
+      "online-stack": "Vicino ora",
+      "favorites": "Preferiti",
+      "conversations": "Chat"
     }
   }
 }

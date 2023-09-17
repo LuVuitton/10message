@@ -30,11 +30,11 @@ export default async function Home() {
         </Link>
 
         <Link href={"sign-in"}>
-          <li>sign-in</li>
+          <li>sign-in +</li>
         </Link>
 
         <Link href={"sign-up"}>
-          <li>sign-up</li>
+          <li>sign-up +</li>
         </Link>
         <Link href="/profile" locale="es">
         <li>ES</li>
