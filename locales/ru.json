@@ -1,5 +1,11 @@
 {
   "hello-world": "Привет мир",
+  "common": {
+    "send-message":"отправить сообщение",
+    "subscribers":"подписчиков",
+    "from-you": "от вас",
+    "meters":"метров"
+  },
   "auth": {
     "common": {
       "sign-up-btn": "Зарегистрироваться",

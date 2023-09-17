@@ -1,5 +1,11 @@
 {
   "hello-world": "Hello, world",
+  "common": {
+    "send-message":"send message",
+    "subscribers":"subscribers",
+    "from-you": "from you",
+    "meters":"meters"
+  },
   "auth": {
     "common": {
       "sign-up-btn": "Sign Up",
@@ -10,7 +16,7 @@
       "regestration-title": "Registration",
       "registration-description": "Here it is indeed fast",
       "sign-in-title": "Sign In",
-      "sign-in-description": "Тут дикий слоган на английском",
+      "sign-in-description": "There's a wild slogan here",
       "forgot-pass": "Forgot password?"
     },
     "fields-name": {
