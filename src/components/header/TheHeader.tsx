@@ -4,52 +4,63 @@ import { usePathname } from "next-intl/client";
 import s from "./theHeader.module.scss";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import settingImg from '../../../public/icons/setting.png'
-import chatImg from '../../../public/icons/chat.png'
-import favoritesImg from '../../../public/icons/favorites.png'
-import usersImg from '../../../public/icons/users.png'
+import settingImg from "../../../public/icons/setting.png";
+import chatImg from "../../../public/icons/chat.png";
+import favoritesImg from "../../../public/icons/favorites.png";
+import usersImg from "../../../public/icons/users.png";
 import Link from "next/link";
+import { useState } from "react";
+import { Burger } from "./burger/Burger";
 
 export const TheHeader = ({ currentLanguage }: { currentLanguage: string }) => {
   const router = useRouter();
   const pathname = usePathname();
   const t = useTranslations("header");
+  const [burgerIsOpen, setBurgerIsOpen] = useState(false);
 
   const switchLang = (lang: string) => {
     router.replace(`${pathname}`, { locale: lang });
   };
 
+
+ 
+
   const toBack = () => {
     router.back();
   };
 
-
-  if(true) {
+  if (true) {
     return (
       <div>
-      <div className={s.mainWrapper}>
-        <div  className={s.btnWrapper}>
-          <Image src={settingImg} alt="settings"/>
-          <div className={s.btnTitle}>{t("btns.settings")}</div>
+        <div className={s.mainWrapper}>
+          <div
+            className={s.btnWrapper}
+            onClick={() => setBurgerIsOpen(!burgerIsOpen)}
+          >
+            <Image src={settingImg} alt="settings" />
+            <div className={s.btnTitle}>{t("btns.settings")}</div>
+          </div>
+
+          <Link className={s.btnWrapper} href={"/stack"}>
+            <Image src={usersImg} alt="users" />
+            <div className={s.btnTitle}>{t("btns.online-stack")}</div>
+          </Link>
+
+          <Link className={s.btnWrapper} href={"/conversations"}>
+            {" "}
+            <Image src={chatImg} alt="chat" />
+            <div className={s.btnTitle}>{t("btns.conversations")}</div>
+          </Link>
+
+          <Link className={s.btnWrapper} href={"/favorites"}>
+            {" "}
+            <Image src={favoritesImg} alt="favorites" />
+            <div className={s.btnTitle}>{t("btns.favorites")}</div>
+          </Link>
         </div>
-
-          <Link className={s.btnWrapper} href={'/stack'}>
-             <Image src={usersImg} alt="users"/>
-          <div className={s.btnTitle}>{t("btns.online-stack")}</div>
-          </Link>        
-
-          <Link className={s.btnWrapper} href={'/conversations'}> <Image src={chatImg} alt="chat"/>
-          <div className={s.btnTitle}>{t("btns.conversations")}</div>
-          </Link>
-
-
-          <Link className={s.btnWrapper} href={'/favorites'}> <Image src={favoritesImg} alt="favorites"/>
-          <div className={s.btnTitle}>{t("btns.favorites")}</div>
-          </Link>
-
+        {burgerIsOpen && <Burger />}
       </div>
-      </div>
-    )
+    );
   }
   return (
     <div className={s.mainWrapper}>

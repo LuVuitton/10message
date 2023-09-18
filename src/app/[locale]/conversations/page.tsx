@@ -44,7 +44,7 @@ export default function Conversation() {
       isOnline: false,
       lastMessage: {
         time: "15:09:2023",
-        text: "Бич ай сэд вот ай сэд, я не помню имена лица номера, я помню только пи код виза мастер кард",
+        text: "Не помню имена лица номера. Я помню только пин-код VISA Master Card Походка от бедра, это я иду в магаз.",
       },
     },
 

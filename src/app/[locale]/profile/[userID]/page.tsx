@@ -38,6 +38,7 @@ export default function Profile(props: Props) {
           </div>
           <div className={s.userName}>{"userName"}</div>
         </div>
+        <div className={s.btnWrapper}><button className={s.btn}>Sen Message</button></div>
         <div className={s.info}>
           <div className={s.infoBlock}>
             <div className={s.infoMain}>1000</div>
@@ -57,7 +58,7 @@ export default function Profile(props: Props) {
           </div>
           <div className={s.infoBlock}>
             <div className={s.infoMain}>+</div>
-            <div className={s.infoText}> добавить в избранное</div>
+            <div className={s.infoText}> добавить/убрать в избранное</div>
             <div className={s.infoDescription}>
               После добавления пользователь будет отображаться в разделе
               Избранное и вы сможете быстро его найти что бы продолжить диалог
