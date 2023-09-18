@@ -8,8 +8,9 @@ export default function Profile(props: Props) {
   const {
     params: { userID },
   } = props;
-  const t = useTranslations();
+  const t = useTranslations("profile-page");
   console.log(userID);
+  const isInFav = false// заглушка, показывает что юзер не в избранном
 
   const photos = [
     "https://www.boredpanda.com/blog/wp-content/uploads/2022/07/pixar-characters_9-62d561ac3b8f4__700.jpg",
@@ -19,10 +20,18 @@ export default function Profile(props: Props) {
     "https://www.boredpanda.com/blog/wp-content/uploads/2022/07/pixar-characters_8-62d560fdb2b35__700.jpg",
     "https://www.boredpanda.com/blog/wp-content/uploads/2022/07/pixar-characters_16-62d569967f9a9__700.jpg",
     "https://www.boredpanda.com/blog/wp-content/uploads/2022/07/pixar-characters_15-62e107b376b46__700.jpg",
-  ]
+  ];
 
-
-  const mapPhotos = photos.map(e=> <Image key={e} alt="photo" src={e} width={95} height={95} className={s.photosImg}/>)
+  const mapPhotos = photos.map((e) => (
+    <Image
+      key={e}
+      alt="photo"
+      src={e}
+      width={95}
+      height={95}
+      className={s.photosImg}
+    />
+  ));
 
   return (
     <div className={s.profileWrapper}>
@@ -38,37 +47,31 @@ export default function Profile(props: Props) {
           </div>
           <div className={s.userName}>{"userName"}</div>
         </div>
-        <div className={s.btnWrapper}><button className={s.btn}>Sen Message</button></div>
+        <div className={s.btnWrapper}>
+          <button className={s.btn}>{t("send-message")}</button>
+        </div>
+
         <div className={s.info}>
           <div className={s.infoBlock}>
             <div className={s.infoMain}>1000</div>
 
-            <div className={s.infoText}> подписчиков</div>
-            <div className={s.infoDescription}>
-              кол-во человек которые добавили этого пользователя в избранное после диалога
-            </div>
+            <div className={s.infoText}>{t("subscribers")}</div>
+            <div className={s.infoDescription}>{t("sub-description")}</div>
           </div>
           <div className={s.infoBlock}>
             <div className={s.infoMain}>25</div>
 
-            <div className={s.infoText}> метров от вас</div>
-            <div className={s.infoDescription}>
-              примерное расстояние на котором сейчас находится пользователь от вас
-            </div>
+            <div className={s.infoText}> {t("meters-from-you")}</div>
+            <div className={s.infoDescription}>{t("distance-description")}</div>
           </div>
           <div className={s.infoBlock}>
             <div className={s.infoMain}>+</div>
-            <div className={s.infoText}> добавить/убрать в избранное</div>
-            <div className={s.infoDescription}>
-              После добавления пользователь будет отображаться в разделе
-              Избранное и вы сможете быстро его найти что бы продолжить диалог
-            </div>
+            <div className={s.infoText}> {t(isInFav?"remove-from-fav":"add-to-fav")}</div>
+            <div className={s.infoDescription}>{t("fav-description")}</div>
           </div>
         </div>
 
-        <div className={s.photos}>
-        {mapPhotos}
-        </div>
+        <div className={s.photos}>{mapPhotos}</div>
       </div>
     </div>
   );

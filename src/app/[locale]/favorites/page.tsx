@@ -8,7 +8,8 @@ export default function OnlineStack() {
       subscribersCount: 1750,
       distanceFromUser: "600",
       userID: "45678dasda90123",
-      photosOpened:25
+      photosOpened:25,
+      totalPhotos:34
     },
 
     {
@@ -17,7 +18,8 @@ export default function OnlineStack() {
       subscribersCount: 800,
       distanceFromUser: "700",
       userID: "0987654321",
-      photosOpened:32
+      photosOpened:32,
+      totalPhotos:34
     },
     {
       userName: "mark_taylor",
@@ -25,7 +27,8 @@ export default function OnlineStack() {
       subscribersCount: 2400,
       distanceFromUser: "350",
       userID: "345678asda9012",
-      photosOpened:45
+      photosOpened:45,
+      totalPhotos:34
     },
     {
       userName: "emily_davis",
@@ -33,7 +36,8 @@ export default function OnlineStack() {
       subscribersCount: 1400,
       distanceFromUser: "700",
       userID: "4567890123",
-      photosOpened:4
+      photosOpened:4,
+      totalPhotos:34
     },
     {
       userName: "charles_johnson",
@@ -41,7 +45,8 @@ export default function OnlineStack() {
       subscribersCount: 1850,
       distanceFromUser: "500",
       userID: "56789s01234",
-      photosOpened:6
+      photosOpened:6,
+      totalPhotos:34
     },
     {
       userName: "dori",
@@ -49,7 +54,8 @@ export default function OnlineStack() {
       subscribersCount: 2300,
       distanceFromUser: "300",
       userID: "5678901234",
-      photosOpened:3
+      photosOpened:3,
+      totalPhotos:34
     },
 
     {
@@ -58,7 +64,8 @@ export default function OnlineStack() {
       subscribersCount: 1000,
       distanceFromUser: "550",
       userID: "34567890e12",
-      photosOpened: 2
+      photosOpened: 2,
+      totalPhotos:34
     },
    
  
@@ -76,6 +83,7 @@ export default function OnlineStack() {
         userID={e.userID}
         userName={e.userName}
         photosOpened={e.photosOpened}
+        totalPhotos={e.totalPhotos}
       />
     </li>
   ));
@@ -93,5 +101,6 @@ type usersData = {
   subscribersCount: number;
   distanceFromUser: string;
   userID: string;
-  photosOpened:number
+  photosOpened:number;
+  totalPhotos:number
 };

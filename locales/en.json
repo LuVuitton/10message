@@ -1,10 +1,24 @@
 {
   "hello-world": "Hello, world",
   "common": {
-    "send-message":"send message",
-    "subscribers":"subscribers",
+    "send-message": "send message",
+    "subscribers": "subscribers",
     "from-you": "from you",
-    "meters":"meters"
+    "meters": "meters",
+    "unsubscribe": "unsubscribe",
+    "have-been-opened": "photos have been opened"
+
+  },
+
+  "profile-page": {
+    "send-message": "send message",
+    "subscribers": "subscribers",
+    "sub-description": "the number of people who added this user to favorites after the dialogue",
+    "meters-from-you": "meters from you",
+    "distance-description": "approximate distance at which the user is currently located from you",
+    "fav-description": "After adding, the user will be displayed in the Favorites section, and you will be able to quickly find them to continue the dialogue",
+    "add-to-fav": "add to favorites",
+    "remove-from-fav": "remove from favorites"
   },
   "auth": {
     "common": {
@@ -58,6 +72,12 @@
       "online-stack": "Nearby now",
       "favorites": "Favorites",
       "conversations": "Сonversations"
+    },
+    "settings": {
+      "my-profile": "My profile",
+      "change-language": "Change language",
+      "change-theme": "Change theme",
+      "log-out": "Log out"
     }
   }
 }

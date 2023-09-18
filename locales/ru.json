@@ -1,10 +1,22 @@
 {
   "hello-world": "Привет мир",
   "common": {
-    "send-message":"отправить сообщение",
-    "subscribers":"подписчиков",
+    "send-message": "отправить сообщение",
+    "subscribers": "подписчиков",
     "from-you": "от вас",
-    "meters":"метров"
+    "meters": "метров",
+    "unsubscribe": "отписаться",
+    "have-been-opened": "фото было открыто"
+  },
+  "profile-page": {
+    "send-message":"отправить сообщение",
+    "subscribers": "подписчиков",
+    "sub-description": "кол-во человек которые добавили этого пользователя в избранное после диалога",
+    "meters-from-you": "метров от вас",
+    "distance-description": "примерное расстояние на котором сейчас находится пользователь от вас",
+    "fav-description": "После добавления пользователь будет отображаться в разделе Избранное и вы сможете быстро его найти что бы продолжить диалог",
+    "add-to-fav":"добавить в избранное",
+    "remove-from-fav":"убрать из избранного"
   },
   "auth": {
     "common": {
@@ -14,10 +26,10 @@
       "dont-have-account": "В первый раз тут? Зарегистрироваться",
       "dont-have-account-description": "(это быстрее чем ты думаешь)",
       "regestration-title": "Регистрация",
-      "registration-description":"Тут это действительно быстро",
+      "registration-description": "Тут это действительно быстро",
       "sign-in-title": "Вход",
-      "sign-in-description":"Тут дикий слоган",
-      "forgot-pass":"Забыли пароль?"
+      "sign-in-description": "Тут дикий слоган",
+      "forgot-pass": "Забыли пароль?"
     },
     "fields-name": {
       "email": "Эл. почта (email)",
@@ -30,7 +42,7 @@
         "required": "Поле обязательно"
       },
       "email": {
-        "invalid-characters":"Неверный формат эл. почты",
+        "invalid-characters": "Неверный формат эл. почты",
         "spaces": "Эл. почта не должна сожержать пробелов"
       },
       "password": {
@@ -53,12 +65,16 @@
   },
   "header": {
     "btns": {
-      "settings":"Настройки",
-      "online-stack":"Сейчас рядом",
-      "favorites":"Избранное",
-      "conversations":"Диалоги"
+      "settings": "Настройки",
+      "online-stack": "Сейчас рядом",
+      "favorites": "Избранное",
+      "conversations": "Диалоги"
+    },
+    "settings": {
+      "my-profile":"Мой профиль",
+"change-language":"Изменить язык",
+"change-theme":"Изменить тему",
+"log-out":"Выход"
     }
   }
 }
-
-

@@ -13,7 +13,8 @@ export const Favorites: React.FC<Props> = ({
   subscribersCount,
   distanceFromUser,
   userID,
-  photosOpened
+  photosOpened,
+  totalPhotos,
 }) => {
   const router = useRouter();
   const t = useTranslations("common");
@@ -40,20 +41,26 @@ export const Favorites: React.FC<Props> = ({
           </div>
         </Link>
         <div className={s.photosOpenedAndOnline}>
-          <div className={s.photosOpened}>{photosOpened}<div className={s.photosOpenedText}>photos have been opened</div> </div>
-          <div className={true ? s.online : s.offline}>{true ? "online" : "offline"} </div>
+          <div className={s.photosOpened}>
+            {photosOpened}/{totalPhotos}
+            <div className={s.photosOpenedText}>
+              {t("have-been-opened")}
+            </div>{" "}
+          </div>
+          <div className={true ? s.online : s.offline}>
+            {true ? "online" : "offline"}{" "}
+          </div>
         </div>
 
         <div className={s.subscribersCount}>
           <div className={s.subsCount}>
-            {" "}
             {subscribersCount} {t("subscribers")}
           </div>
           <button onClick={sendMessageHandler} className={s.btn}>
             {t("send-message")}
           </button>
           <button onClick={sendMessageHandler} className={s.btn}>
-            unsubscribe
+            {t("unsubscribe")}
           </button>
         </div>
       </div>
@@ -67,5 +74,6 @@ type Props = {
   subscribersCount: number;
   distanceFromUser: string;
   userID: string;
-  photosOpened:number
+  photosOpened: number;
+  totalPhotos: number;
 };

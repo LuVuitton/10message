@@ -1,5 +1,6 @@
 import { NextIntlClientProvider } from "next-intl";
 import "./globals.css";
+import s from "./mainContent.module.scss";
 import type { Metadata } from "next";
 import { NotFound } from "./NotFound/NotFound";
 import { TheHeader } from "@/components/header/TheHeader";
@@ -35,7 +36,9 @@ export default async function RootLayout({
       <body className={inter.className}>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <TheHeader currentLanguage={locale} />
+          <div className={s.mainContent}>
           {children}
+          </div>
         </NextIntlClientProvider>
       </body>
     </html>
