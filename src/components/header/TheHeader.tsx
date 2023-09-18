@@ -4,13 +4,13 @@ import { usePathname } from "next-intl/client";
 import s from "./theHeader.module.scss";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import Link from "next/link";
+import { useState } from "react";
+import { Burger } from "./burger/Burger";
 import settingImg from "../../../public/icons/setting.png";
 import chatImg from "../../../public/icons/chat.png";
 import favoritesImg from "../../../public/icons/favorites.png";
 import usersImg from "../../../public/icons/users.png";
-import Link from "next/link";
-import { useState } from "react";
-import { Burger } from "./burger/Burger";
 
 export const TheHeader = ({ currentLanguage }: { currentLanguage: string }) => {
   const router = useRouter();
@@ -21,9 +21,6 @@ export const TheHeader = ({ currentLanguage }: { currentLanguage: string }) => {
   const switchLang = (lang: string) => {
     router.replace(`${pathname}`, { locale: lang });
   };
-
-
- 
 
   const toBack = () => {
     router.back();
@@ -41,19 +38,17 @@ export const TheHeader = ({ currentLanguage }: { currentLanguage: string }) => {
             <div className={s.btnTitle}>{t("btns.settings")}</div>
           </div>
 
-          <Link className={s.btnWrapper} href={"/stack"}>
+          <Link className={s.btnWrapper} href={"stack"}>
             <Image src={usersImg} alt="users" />
             <div className={s.btnTitle}>{t("btns.online-stack")}</div>
           </Link>
 
-          <Link className={s.btnWrapper} href={"/conversations"}>
-            {" "}
+          <Link className={s.btnWrapper} href={"conversations"}>
             <Image src={chatImg} alt="chat" />
             <div className={s.btnTitle}>{t("btns.conversations")}</div>
           </Link>
 
-          <Link className={s.btnWrapper} href={"/favorites"}>
-            {" "}
+          <Link className={s.btnWrapper} href={"favorites"}>
             <Image src={favoritesImg} alt="favorites" />
             <div className={s.btnTitle}>{t("btns.favorites")}</div>
           </Link>

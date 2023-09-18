@@ -3,7 +3,6 @@ import s from "./burger.module.scss";
 import { useState } from "react";
 import { useRouter } from "next-intl/client";
 import { usePathname } from "next-intl/client";
-import { link } from "fs";
 import { useTranslations } from "next-intl";
 
 export const Burger = () => {
@@ -12,6 +11,7 @@ export const Burger = () => {
   const pathname = usePathname();
   const router = useRouter();
   const t = useTranslations("header.settings");
+
   const locale = [
     { lang: "English", value: "en" },
     { lang: "Українська", value: "ua" },
