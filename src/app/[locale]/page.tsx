@@ -21,8 +21,8 @@ export default async function Home() {
           <li>conversations</li>
         </Link>
 
-        <Link href={"online-stack"}>
-          <li>online-stack</li>
+        <Link href={"stack"}>
+          <li>stack</li>
         </Link>
 
         <Link href={"profile"}>
