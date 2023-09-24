@@ -4,13 +4,17 @@ import Image from "next/image";
 import s from "./profile.module.scss";
 import noPhotoImg from "../../../../../public/icons/user.png";
 
+
 export default function Profile(props: Props) {
   const {
     params: { userID },
   } = props;
   const t = useTranslations("profile-page");
-  console.log(userID);
+  // console.log(userID);
   const isInFav = false// заглушка, показывает что юзер не в избранном
+
+  
+
 
   const photos = [
     "https://www.boredpanda.com/blog/wp-content/uploads/2022/07/pixar-characters_9-62d561ac3b8f4__700.jpg",
@@ -73,6 +77,7 @@ export default function Profile(props: Props) {
 
         <div className={s.photos}>{mapPhotos}</div>
       </div>
+
     </div>
   );
 }

@@ -5,6 +5,9 @@ import type { Metadata } from "next";
 import { NotFound } from "./NotFound/NotFound";
 import { TheHeader } from "@/components/header/TheHeader";
 import { Inter } from "next/font/google";
+import { Provider } from "react-redux";
+import { store } from "@/redux/store";
+import { ReduxProvider } from "@/redux/ReduxProvider";
 
 // export function generateStaticParams() {
 //   return [{ locale: "en" }, { locale: "ua" }];
@@ -35,10 +38,10 @@ export default async function RootLayout({
     <html lang={locale}>
       <body className={inter.className}>
         <NextIntlClientProvider locale={locale} messages={messages}>
-          <TheHeader currentLanguage={locale} />
-          <div className={s.mainContent}>
-          {children}
-          </div>
+          <ReduxProvider>
+            <TheHeader currentLanguage={locale} />
+            <div className={s.mainContent}>{children}</div>
+          </ReduxProvider>
         </NextIntlClientProvider>
       </body>
     </html>
