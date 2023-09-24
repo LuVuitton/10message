@@ -7,18 +7,24 @@
     "meters": "meters",
     "unsubscribe": "unsubscribe",
     "have-been-opened": "photos have been opened"
-
   },
 
   "profile-page": {
     "send-message": "send message",
     "subscribers": "subscribers",
     "sub-description": "the number of people who added this user to favorites after the dialogue",
-    "meters-from-you": "meters from you",
-    "distance-description": "approximate distance at which the user is currently located from you",
+    "close": "close",
+    "no-far": "no far",
+    "far": "far",
+    "unknown": "user has hidden their location",
+    "distance-description":"User's approximate distance from you",
     "fav-description": "After adding, the user will be displayed in the Favorites section, and you will be able to quickly find them to continue the dialogue",
     "add-to-fav": "add to favorites",
-    "remove-from-fav": "remove from favorites"
+    "remove-from-fav": "remove from favorites",
+    "total-photos": "total photos",
+    "no-photos": "no photos yet",
+    "photos-description": "you can only see the photos that have been shared during your conversation with the user",
+    "no-photos-description": "start a conversation with the user to see their photos"
   },
   "auth": {
     "common": {

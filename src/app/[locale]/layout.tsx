@@ -5,8 +5,6 @@ import type { Metadata } from "next";
 import { NotFound } from "./NotFound/NotFound";
 import { TheHeader } from "@/components/header/TheHeader";
 import { Inter } from "next/font/google";
-import { Provider } from "react-redux";
-import { store } from "@/redux/store";
 import { ReduxProvider } from "@/redux/ReduxProvider";
 
 // export function generateStaticParams() {
