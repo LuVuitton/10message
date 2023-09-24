@@ -1,15 +1,16 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
-const BASE_URL = 'http://localhost:7777'; // Замените на ваш базовый URL
+const BASE_URL = 'http://localhost:7777/stack'; // Замените на ваш базовый URL
 
-export const apiSlice = createApi({
+export const stackSlice = createApi({
+  reducerPath: "stackApi",
   baseQuery: fetchBaseQuery({ baseUrl: BASE_URL }),
   endpoints: (builder) => ({
     getUsers: builder.query<any, void>({
-      query: () => '/users', // Путь к вашему эндпоинту
+      query: () => '/', // Путь к вашему эндпоинту
     }),
   }),
 });
 
-export const { useGetUsersQuery } = apiSlice;
+export const { useGetUsersQuery } = stackSlice;
 

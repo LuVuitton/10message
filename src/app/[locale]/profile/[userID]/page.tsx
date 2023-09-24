@@ -41,7 +41,9 @@ export default function Profile(props: Props) {
     // берем в скобки весь компонент, разделить на мелкие компоненты и передавать в пропсах, бо это жуть
     const { userName, subscribers, location, photos, totalPhotos } = data;
 
-    const mapPhotos = photos.map((e) => (
+   let mapPhotos
+   if (photos){
+  mapPhotos = photos.map((e) => (
       <Image
         key={e}
         alt="photo"
@@ -50,7 +52,8 @@ export default function Profile(props: Props) {
         height={95}
         className={s.photosImg}
       />
-    ));
+    ));}
+  
 
     let distance;
     switch (location) {
@@ -68,6 +71,9 @@ export default function Profile(props: Props) {
         break;
     }
 
+
+     
+
     return (
       <div className={s.profileWrapper}>
         <div className={s.profileContainer}>
@@ -76,8 +82,8 @@ export default function Profile(props: Props) {
               <Image
                 className={s.userImg}
                 fill={true} //заполняет род эл
-                src={false ? "userPhoto" : noPhotoImg}
-                alt={false ? "user photo" : "user doesn't have photo"}
+                src={photos ?  photos[photos.length-1]:noPhotoImg }
+                alt={photos ? "user photo" : "user doesn't have photo"}
               />
             </div>
             <div className={s.userName}>{userName}</div>
@@ -118,7 +124,7 @@ export default function Profile(props: Props) {
             </div>
           </div>
 
-          <div className={s.photos}>{mapPhotos}</div>
+          <div className={s.photos}>{!mapPhotos?"нет фото":mapPhotos}</div>
         </div>
       </div>
     );

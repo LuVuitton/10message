@@ -1,11 +1,15 @@
-import { apiSlice } from '@/app/api/stack.api';
+import { profileSlice } from './../app/api/profile.api';
+
+import { stackSlice } from '@/app/api/stack.api';
 import { configureStore } from '@reduxjs/toolkit';
 
 
 export const store = configureStore({
   reducer: {
-    [apiSlice.reducerPath]: apiSlice.reducer,
+    [stackSlice.reducerPath]: stackSlice.reducer,
+    [profileSlice.reducerPath]:profileSlice.reducer
+
   },
   middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware().concat(apiSlice.middleware),
+    getDefaultMiddleware().concat([stackSlice.middleware, profileSlice.middleware ])
 });
